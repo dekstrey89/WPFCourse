@@ -1,0 +1,14 @@
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\bin\Debug\FirstWpfApplication.exe.config
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\bin\Debug\FirstWpfApplication.exe
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\bin\Debug\FirstWpfApplication.pdb
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.csprojResolveAssemblyReference.cache
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\MainWindow.g.cs
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\App.g.cs
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication_MarkupCompile.cache
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication_MarkupCompile.lref
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\MainWindow.baml
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.g.resources
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.Properties.Resources.resources
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.csproj.GenerateResource.Cache
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.exe
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.pdb
