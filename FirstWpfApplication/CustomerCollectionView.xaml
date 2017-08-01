@@ -11,19 +11,20 @@
       <RowDefinition Height="*"/>
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
-    <ListView Grid.Row="0">
+    <ListView Grid.Row="0" ItemsSource="{Binding}">
       <ListView.View>
         <GridView>
           <GridView.Columns>
-            <GridViewColumn Header="Идентификатор" />
-            <GridViewColumn Header="Имя" />
-            <GridViewColumn Header="Фамилия" />
-            <GridViewColumn Header="Отчество" />
+            <GridViewColumn Header="Идентификатор" DisplayMemberBinding="{Binding Id}"/>
+            <GridViewColumn Header="Имя" DisplayMemberBinding="{Binding FirstName}"/>
+            <GridViewColumn Header="Фамилия" DisplayMemberBinding="{Binding LastName}"/>
+            <GridViewColumn Header="Отчество" DisplayMemberBinding="{Binding MiddleName}"/>
           </GridView.Columns>
         </GridView>
       </ListView.View>
     </ListView>
-    <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="3" Orientation="Horizontal" HorizontalAlignment="Right">
+    <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Margin="3" Orientation="Horizontal" 
+    HorizontalAlignment="Right">
       <Button Margin="3">Открыть карточку покупателя</Button>
       <Button Margin="3">Добавить покупателя</Button>
       <Button Margin="3">Удалить покупателя</Button>

@@ -19,23 +19,32 @@
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
     <TextBlock Grid.Column="0" Grid.Row="0" Text="Имя:" Margin="3"/>
-    <TextBox Grid.Column="1" Grid.Row="0" Margin="3" />
+    <TextBox Grid.Column="1" Grid.Row="0" Margin="3" Text="{Binding FirstName, 
+    ValidatesOnDataErrors=True, NotifyOnValidationError=True, 
+    UpdateSourceTrigger=PropertyChanged}"/>
     <TextBlock Grid.Column="0" Grid.Row="1" Text="Фамилия:" Margin="3"/>
-    <TextBox Grid.Column="1" Grid.Row="1" Margin="3" />
+    <TextBox Grid.Column="1" Grid.Row="1" Margin="3" Text="{Binding LastName, 
+    ValidatesOnDataErrors=True, NotifyOnValidationError=True, 
+    UpdateSourceTrigger=PropertyChanged}"/>
     <TextBlock Grid.Column="0" Grid.Row="2" Text="Отчество:" Margin="3"/>
-    <TextBox Grid.Column="1" Grid.Row="2" Margin="3"/>
-    <ListView Grid.Row="3" Grid.ColumnSpan="2" Margin="3">
+    <TextBox Grid.Column="1" Grid.Row="2" Margin="3" Text="{Binding MiddleName, 
+    UpdateSourceTrigger=PropertyChanged}"/>
+    <ListView Grid.Row="3" Grid.ColumnSpan="2" Margin="3" ItemsSource="{Binding Orders}">
       <ListView.View>
         <GridView>
           <GridView.Columns>
-            <GridViewColumn Header="Идентификатор"/>
-            <GridViewColumn Header="Дата заказа"/>
-            <GridViewColumn Header="Цена заказа"/>
+            <GridViewColumn Header="Идентификатор" 
+            DisplayMemberBinding="{Binding Id}"/>
+            <GridViewColumn Header="Дата заказа" 
+            DisplayMemberBinding="{Binding OrderDate}"/>
+            <GridViewColumn Header="Цена заказа" 
+            DisplayMemberBinding="{Binding TotalPrice}"/>
           </GridView.Columns>
         </GridView>
       </ListView.View>
     </ListView>
-    <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Margin="3" Orientation="Horizontal" HorizontalAlignment="Right">
+    <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Margin="3" Orientation="Horizontal" 
+    HorizontalAlignment="Right">
       <Button Margin="3">Открыть заказ</Button>
       <Button Margin="3">Добавить заказ</Button>
       <Button Margin="3">Удалить заказ</Button>

@@ -18,17 +18,20 @@
       <RowDefinition Height="Auto"/>
     </Grid.RowDefinitions>
     <TextBlock Grid.Column="0" Grid.Row="0" Text="Дата заказа:" Margin="3"/>
-    <TextBox Grid.Column="1" Grid.Row="0" Margin="3" IsReadOnly="True"/>
+    <TextBox Grid.Column="1" Grid.Row="0" Margin="3" 
+    Text="{Binding OrderDate, Mode=OneWay}" IsReadOnly="True"/>
     <TextBlock Grid.Column="0" Grid.Row="1" Text="Сумма заказа:" Margin="3"/>
-    <TextBox Grid.Column="1" Grid.Row="1" Margin="3" IsReadOnly="True"/>
-    <ListView Grid.Row="2" Grid.ColumnSpan="2" Margin="3">
+    <TextBox Grid.Column="1" Grid.Row="1" Margin="3" 
+    Text="{Binding TotalPrice, Mode=OneWay}" IsReadOnly="True"/>
+    <ListView Grid.Row="2" Grid.ColumnSpan="2" Margin="3" 
+    ItemsSource="{Binding OrderItems}">
       <ListView.View>
         <GridView>
           <GridView.Columns>
-            <GridViewColumn Header="Идентификатор"/>
-            <GridViewColumn Header="Наименование"/>
-            <GridViewColumn Header="Цена"/>
-            <GridViewColumn Header="Количество"/>
+            <GridViewColumn Header="Идентификатор" DisplayMemberBinding="{Binding Id}"/>
+            <GridViewColumn Header="Наименование" DisplayMemberBinding="{Binding Name}"/>
+            <GridViewColumn Header="Цена" DisplayMemberBinding="{Binding Price}"/>
+            <GridViewColumn Header="Количество" DisplayMemberBinding="{Binding Count}"/>
           </GridView.Columns>
         </GridView>
       </ListView.View>
@@ -40,5 +43,4 @@
       <Button Margin="3">Удалить элемент</Button>
     </StackPanel>
   </Grid>
-
 </UserControl>

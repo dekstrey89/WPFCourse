@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,13 +15,13 @@ namespace FirstWpfApplication
     /// <summary>
     /// Внутренний список покупателей.
     /// </summary>
-    public List<Customer> Customers;
+    public ObservableCollection<Customer> Customers;
 
     /// <summary>
     /// Получить коллекцию покупателей.
     /// </summary>
     /// <returns>Коллекция покупателей.</returns>
-    public List<Customer> GetAllCustomers()
+    public ObservableCollection<Customer> GetAllCustomers()
     {
       return Customers;
     }
@@ -144,7 +145,7 @@ namespace FirstWpfApplication
       order8.OrderItems.Add(new OrderItem { Id = 23, Name = "OrderItem23", Count = 4, Price = 87 });
       order8.OrderItems.Add(new OrderItem { Id = 24, Name = "OrderItem24", Count = 6, Price = 96 });
 
-      Customers = new List<Customer> { customer1, customer2, customer3 };
+      Customers = new ObservableCollection<Customer> { customer1, customer2, customer3 };
     }
   }
 }
