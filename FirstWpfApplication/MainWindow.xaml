@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:FirstWpfApplication"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="2*"/>
+    </Grid.ColumnDefinitions>
+    
+    <StackPanel Grid.Column="0" Orientation="Vertical">
+      <TextBlock Margin="3">
+        <Hyperlink>Открыть список покупателей</Hyperlink>
+      </TextBlock>
+      <TextBlock Margin="3">
+        <Hyperlink>Закрыть текущую вкладку</Hyperlink>
+      </TextBlock>
+    </StackPanel>
+    <GridSplitter Grid.Column="1" ResizeDirection="Columns" Width="3" Height="Auto"
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></GridSplitter>
+    <TabControl Name="TabControl" Grid.Column="2"/>
+  </Grid>
 </Window>

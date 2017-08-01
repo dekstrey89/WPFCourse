@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\App.xaml
-11151548125
+51716709950
 
-14635460282
+18753430770
 13738642453
-MainWindow.xaml;
+CustomerCollectionView.xaml;CustomerView.xaml;MainWindow.xaml;OrderItemView.xaml;OrderView.xaml;
 
-False
+True
 

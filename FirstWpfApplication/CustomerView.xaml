@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="FirstWpfApplication.CustomerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FirstWpfApplication"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <TextBlock Grid.Column="0" Grid.Row="0" Text="Имя:" Margin="3"/>
+    <TextBox Grid.Column="1" Grid.Row="0" Margin="3" />
+    <TextBlock Grid.Column="0" Grid.Row="1" Text="Фамилия:" Margin="3"/>
+    <TextBox Grid.Column="1" Grid.Row="1" Margin="3" />
+    <TextBlock Grid.Column="0" Grid.Row="2" Text="Отчество:" Margin="3"/>
+    <TextBox Grid.Column="1" Grid.Row="2" Margin="3"/>
+    <ListView Grid.Row="3" Grid.ColumnSpan="2" Margin="3">
+      <ListView.View>
+        <GridView>
+          <GridView.Columns>
+            <GridViewColumn Header="Идентификатор"/>
+            <GridViewColumn Header="Дата заказа"/>
+            <GridViewColumn Header="Цена заказа"/>
+          </GridView.Columns>
+        </GridView>
+      </ListView.View>
+    </ListView>
+    <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Margin="3" Orientation="Horizontal" HorizontalAlignment="Right">
+      <Button Margin="3">Открыть заказ</Button>
+      <Button Margin="3">Добавить заказ</Button>
+      <Button Margin="3">Удалить заказ</Button>
+    </StackPanel>
+  </Grid>
+</UserControl>

@@ -12,3 +12,11 @@ D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplica
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.csproj.GenerateResource.Cache
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.exe
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\FirstWpfApplication.pdb
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\CustomerCollectionView.g.cs
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\CustomerView.g.cs
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\OrderItemView.g.cs
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\OrderView.g.cs
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\CustomerCollectionView.baml
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\CustomerView.baml
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\OrderItemView.baml
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\OrderView.baml
