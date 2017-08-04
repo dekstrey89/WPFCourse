@@ -20,3 +20,5 @@ D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\CustomerCollect
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\CustomerView.baml
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\OrderItemView.baml
 D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\OrderView.baml
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\App.baml
+D:\Projects\TestProjects\WPFCourse\FirstWpfApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
